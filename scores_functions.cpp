@@ -1,3 +1,5 @@
+
+
 void ReadScores(float cStu[])
 {
     for (int i = 0; i < NUM_SCORES; i++)

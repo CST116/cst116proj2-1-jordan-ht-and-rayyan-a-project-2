@@ -2,11 +2,7 @@
 
 #include "primaryHeader.h"
 
-//FOR INITIAL TESTING. REMOVE AFTER USE
-int HTTest(int in)
-{
-	return in * 3;
-}
+
 
 //(1) Retrieve an integer from the user (without prompt). If the magnitude of the value is greter then 1 million, reject it and ask again.
 int GetData(void)

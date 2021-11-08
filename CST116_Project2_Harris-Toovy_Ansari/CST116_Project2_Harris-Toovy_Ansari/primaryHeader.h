@@ -19,7 +19,7 @@ void ProcessMenuChoice(int, int&);
 
 
 //Displays Menu
-void DisplayMenu(int menuOption = 0);
+void DisplayMenu(int menuOption);
 //Determined whether number is positive, ngeative, or zero.
 void IsPosNeg(int number);
 //Displays the number of digits in the input

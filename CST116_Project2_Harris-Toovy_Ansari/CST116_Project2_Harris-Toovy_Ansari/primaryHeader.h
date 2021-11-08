@@ -17,8 +17,12 @@ int GetData(void);
 //Calls functions based on the menu selection number. Input format: menu number, user number.
 void ProcessMenuChoice(int, int&);
 
-//Displays if the input is positive, negative, or zero.
-void IsPosNeg(int);
 
-//Returns the number of digits (powers of 10).
-int FindNumDigits(int);
+//Displays Menu
+void DisplayMenu(int menuOption = 0);
+//Determined whether number is positive, ngeative, or zero.
+void IsPosNeg(int number);
+//Displays the number of digits in the input
+int FindNumDigits(int number);
+//Display the addition table
+void DisplayAdditionTable();

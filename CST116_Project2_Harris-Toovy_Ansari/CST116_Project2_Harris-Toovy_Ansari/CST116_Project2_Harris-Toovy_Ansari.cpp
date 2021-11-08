@@ -7,6 +7,9 @@ int main()
     //FOR INITIAL TESTING. REMOVE AFTER USE
     int a = 0, b = 0;
 
+    int menuOption;
+    int number;
+
     a = ansariTest(2);
     b = HTTest(3);
     cout << "   " << a << "   " << b << endl;

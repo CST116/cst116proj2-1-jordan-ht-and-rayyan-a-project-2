@@ -1,0 +1,20 @@
+Each function will be tested at its (positive and negative) limits as well as a test with a intermediate value to ensure reliable operation. 
+A list of test values for each function is shown below:
+
+GetData: -1000001, 1000001, 50
+
+DisplayMenu: N/A
+
+ProcessMenuChoice: -1, 99, 2
+
+IsPosNeg: -999, 999, 0
+
+IsOddEven: -77, 122, 0
+
+FindNumDigits: -12, 57351, 0
+
+FindDigitAtPosition: [-376, 37598], [-12, 0, 4]
+
+DisplayAdditionTable: N/A - Run once
+
+DisplayMultiplicationTable: N/A - Run once

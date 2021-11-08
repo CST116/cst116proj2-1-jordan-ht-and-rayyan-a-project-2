@@ -1,0 +1,48 @@
+NOTICE: THIS DOCUMENT REPRESENTS JORDAN HARRIS-TOOVY'S WORK, AND DOES NOT REPRESENT THE TEAM AS A WHOLE
+
+Disclaimer: Many of the meetings were rushed in-person meetings in between clases, so I was not always able 
+to write down theagile question sets - especially since I often was preoccupied providing instruction.
+
+Meeting 10/23/2021 (Online):
+1) I will work with Rayyan to setup the Git repo and divide work.
+2) I know to basic function of GitHub, and some project managment.
+3) I don't know (and am afraid of) how Git-merge works.
+---[OUTCOME]---
+Due to GitHub realted issues, we were not able to get the project setup, however, we were able to divide the work between us.
+
+Meeting 10/25/2021 (Online):
+1) I will work with Rayyan to setup the Git repo.
+2) I know to basic function of GitHub, and some project managment.
+3) I don't know how the GitHub teams work.
+---[OUTCOME]---
+We were still unable to fix the GitHub issues, but work began on our local project copies.
+
+Meeting 10/25/2021 (Online):
+1) I will work with Rayyan to make the naming convention for our functions.
+2) I know a few naming conventions, and I know a bit about parallel devlopment.
+3) Since the GitHub classroom repo does not work yet, I don't know the best way to colaborate.
+---[OUTCOME]---
+We decided on using the same naming convention as the book. Work continued at normal pace.
+
+Meeting 10/27/2021 (in-person):
+---[OUTCOME]---
+Attempted to fix a GitHub realted issue; partial success - issue remained, but workaround found.
+
+Meeting 10/30/2021 (in-person):
+---[OUTCOME]---
+Briefly discussed GutHub issues.
+
+Meeting 11/3/2021 (in-person):
+---[OUTCOME]---
+Double checked work distribution and worked on GutHub and Visual Studio issues.
+
+Meeting 11/6/2021 (in-person):
+---[OUTCOME]---
+Requested Rayyan to pull latest version of the codbase.
+
+Meeting 11/7/2021 (Online):
+1) I will ask Rayyan to pull the latest version of the project, put his work into the files, and preform testing and integration work.
+2) I know how to avoid most of the GitHub related issues encountered so far, as well as basic testing protocols. 
+3) I do not know if we will be able to smoothly integrate both of our code, nor do I know how to resolve related conflicts.
+---[OUTCOME]---
+We successfully integrated both codebases, finshed all function calls, tested the program, and began final documentation.

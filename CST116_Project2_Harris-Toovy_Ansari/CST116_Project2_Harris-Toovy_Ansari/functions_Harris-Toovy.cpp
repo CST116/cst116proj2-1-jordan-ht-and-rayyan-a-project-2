@@ -2,9 +2,7 @@
 
 #include "primaryHeader.h"
 
-
-
-//(1) Retrieve an integer from the user (without prompt). If the magnitude of the value is greter then 1 million, reject it and ask again.
+//Retrieve an integer from the user (without prompt). If the magnitude of the value is greter then 1 million, reject it and ask again.
 int GetData(void)
 {
 	bool valid = true;
@@ -16,94 +14,119 @@ int GetData(void)
 
 		if ((passback > 1'000'000) || (passback < -1'000'000))
 		{
-			cout << "Input out of range. Enter input again:";
-			valid = false;
+			cout << "Input out of range. Enter input again: ";
 		}
 		else
 		{
-			valid = true;
+			valid = false;
 		}
 	}
 
 	return passback;
 }
 
-//(3) Calls functions based on the menu selection number. Input format: menu number, user number. ---TODO: ADD FUNCTION CALLS
+//Calls functions based on the menu selection number. Input format: menu number, user number.
 void ProcessMenuChoice(int menuIndex, int &userValue)
 {
+	int numOrder = 0;
+
 	switch (menuIndex)
 	{
 	case(1):
 
-		//TODO: ADD FUNCTION CALL HERE
+		IsPosNeg(userValue);
+		cout << endl;
 
 		break;
 	case(2):
 
-		//TODO: ADD FUNCTION CALL HERE
+		IsOddEven(userValue);
+		cout << endl;
 
 		break;
 	case(3):
+		
+		numOrder = FindNumDigits(userValue);
 
-		//TODO: ADD FUNCTION CALL HERE
+		cout << "The number of digits in " << userValue << " is " << numOrder << endl;
 
 		break;
 	case(4):
 
-		//TODO: ADD FUNCTION CALL HERE
+		cout << "Enter the position of desired digit: ";
+
+		numOrder = GetData();
+
+		FindDigitAtPosition(userValue, numOrder);
 
 		break;
 	case(5):
 
-		//TODO: ADD FUNCTION CALL HERE
+		DisplayAdditionTable();
 
 		break;
 	case(6):
 
-		//TODO: ADD FUNCTION CALL HERE
-
-		break;
-	case(7):
-
-		//TODO: ADD FUNCTION CALL HERE
+		DisplayMultiplicationTable();
 
 		break;
 	default:
 		
-		cout << "Menu entry invalid";
+		cout << "Menu entry invalid" << endl;
 
 		break;
 	}
 }
 
-//(4) Displays if the input is positive, negative, or zero.
-void IsPosNeg(int input)
+//Determines if the input is odd, even, or zero. Prints the result 
+void IsOddEven(int userValue)
 {
-
-	if (input > 0)
+	if (userValue == 0)
 	{
-		cout << "The input number is positive.";
+		cout << "The number is zero";
 	}
-	else if (input < 0)
+	else if (((userValue % 2) == 1) || ((userValue % 2) == -1))
 	{
-		cout << "The input number is negative.";
+		cout << "The number " << userValue << " is odd";
 	}
 	else
 	{
-		cout << "The input number is zero.";
+		cout << "The number " << userValue << " is even";
 	}
 }
 
-//(6) Returns the number of digits (powers of 10). Example: Input 123456, Output 5 
-int FindNumDigits(int input)
+//Displays a 12x12 multiplication table
+void DisplayMultiplicationTable(void)
 {
-	int resultant = 0;
-
-	while (abs(input) > 1)
+	for (int idy = 0; idy < 12; idy++)
 	{
-		input /= 10;
-		resultant++;
+		for (int idx = 0; idx < 12; idx++)
+		{
+			cout << setw(3) << (idx + 1) * (idy + 1) << " ";
+		}
+		cout << endl;
 	}
+}
 
-	return resultant;
+//Displays the a digit of the input number. Input format: base number, digit selector
+void FindDigitAtPosition(int userValue, int selector)
+{
+	int finalNumber = 0;
+
+	if ((selector > FindNumDigits(userValue)) || (selector < 0))
+	{
+		cout << "Selected position out of range" << endl;
+	}
+	else
+	{
+		cout << "The digit of " << userValue << " in position " << selector << " is ";
+
+		for (int idx = 0; idx < (selector - 1); idx++)
+		{
+			userValue /= 10;
+		}
+		finalNumber = abs(userValue % 10);
+
+		cout << finalNumber << endl;
+	}
 }

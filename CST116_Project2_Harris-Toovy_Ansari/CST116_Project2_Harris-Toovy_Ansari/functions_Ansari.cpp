@@ -3,8 +3,6 @@
 #include "primaryHeader.h"
 
 
-
-
 void DisplayMenu(int& menuOption) {
 
     cout << "Which of the following choices would you like to choose: " << endl;

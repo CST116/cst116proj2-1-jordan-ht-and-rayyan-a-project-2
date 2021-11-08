@@ -4,6 +4,18 @@
 
 int main()
 {
-    
-}
+    int menuSelector = 0, userNumber = 0;
 
+    DisplayMenu(menuSelector);
+
+    //Preliminary input check in order to only get required data
+    if ((menuSelector <= 4) && (menuSelector > 0))
+    {
+        cout << "Enter a number: ";
+        userNumber = GetData();
+    }
+
+    ProcessMenuChoice(menuSelector, userNumber);
+
+    return (0);
+}
